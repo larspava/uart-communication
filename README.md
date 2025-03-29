@@ -9,7 +9,7 @@ Low-level methods can be abstracted. If you prefer, use frameworks like Arduino,
 
 # Answer:
 To ensure that each message is properly sent and that its content is correct, we can use one error detection method like CRC (Cyclic Redundancy Check).
-Since it has several boards, we will use two bytes from the data to identify the board who is sending the message. We will consider the length 
+Since it has several boards, we will use one byte from the data to identify the board who is sending the message. We will consider the length 
 of the message too, so the receiver can read the exaclty size of bits that was sent. The whole data sent and received by these boards will follow the pattern below:
 ![protoviz_2025-03-28_21-33-24](https://github.com/user-attachments/assets/3eed8084-2822-40a5-bec1-803d91abeb5c)
 
